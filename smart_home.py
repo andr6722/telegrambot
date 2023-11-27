@@ -18,6 +18,7 @@ class SmartHomeBot:
 
     def show_device_status(self, message):
         # Показать текущее состояние устройств в умном доме
+        print("hello")
         pass
 
     def control_device(self, message):
