@@ -20,7 +20,7 @@ class SmartHomeBot:
     def show_device_status(self):
         # Показать текущее состояние устройств в умном доме
         home_status = f"Температура: {status.temperature}C\n" \
-                      f"Статус двери: {status.door_status}\n" \
+                      f"Статус sds: {status.door_status}\n" \
                       f"Статус окон: {status.window_status}\n" \
                       f"Статус света: {status.light_status}"
 
