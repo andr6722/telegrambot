@@ -17,8 +17,7 @@ class SmartHomeBot:
             self.db.register_user(user_id, username)
 
     def show_device_status(self, message):
-        # Показать текущее состояние устройств в умном доме
-
+        print("hello")
         pass
 
     def control_device(self, message):
