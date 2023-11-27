@@ -1,6 +1,7 @@
 import telebot
 
 from database import Database
+from status import status
 
 
 class SmartHomeBot:
@@ -16,10 +17,12 @@ class SmartHomeBot:
         if not user:
             self.db.register_user(user_id, username)
 
-    def show_device_status(self, message):
+    def show_device_status(self):
         # Показать текущее состояние устройств в умном доме
-        print('sfsdfsf')
-        pass
+        home_status = f"Температура: {status.temperature}C\n" \
+                      f"Статус sds: {status.door_status}\n" \
+                      f"Статус окон: {status.window_status}\n" \
+                      f"Статус света: {status.light_status}"
 
     def control_device(self, message):
         # Управление устройствами в умном доме (например, свет, термостат)
